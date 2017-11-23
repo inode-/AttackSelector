@@ -95,7 +95,7 @@ public class PluginQueueTableModel extends AbstractTableModel {
 
 			String urlPath = requestUrl.getPath();
 
-			if (!requestUrl.getQuery().isEmpty()) {
+			if ((requestUrl.getQuery() != null) && (!requestUrl.getQuery().isEmpty())) {
 				urlPath.concat("?");
 				urlPath.concat(requestUrl.getQuery());
 			}
