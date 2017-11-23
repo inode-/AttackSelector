@@ -578,7 +578,7 @@ public class PluginGUI implements Runnable, ActionListener, ListSelectionListene
 
 			// Remove button listener
 			case "Delete":
-				int cur_row = scan_profile_table.getSelectedRow();
+				final int cur_row = scan_profile_table.getSelectedRow();
 
 				// Don't allow to remove default scan configuration
 				if (cur_row != 0) {
